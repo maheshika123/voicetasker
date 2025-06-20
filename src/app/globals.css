@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 50% 98%; /* Very light, warm off-white */
+    --foreground: 240 10% 20%; /* Dark grey */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 240 10% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 20%;
+
+    --primary: 340 100% 85%; /* Soft Pink */
+    --primary-foreground: 340 100% 20%; /* Dark Pink for text on primary */
+
+    --secondary: 240 10% 95%; /* Light grey for secondary elements */
+    --secondary-foreground: 240 10% 20%;
+
+    --muted: 240 10% 90%;
+    --muted-foreground: 240 10% 40%; /* Medium gray for muted text */
+
+    --accent: 170 70% 75%; /* Light Teal/Mint */
+    --accent-foreground: 170 70% 15%; /* Dark Teal for text on accent */
+
+    --destructive: 0 84% 60%; /* Standard destructive red */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 10% 85%; /* Border color for light theme */
+    --input: 240 10% 90%; /* Input background for light theme */
+    --ring: 340 100% 85%; /* Ring color to match primary */
+
+    --chart-1: 340 100% 85%;
+    --chart-2: 170 70% 75%;
+    --chart-3: 40 80% 70%;
+    --chart-4: 280 65% 75%;
+    --chart-5: 200 75% 70%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar specific colors, if needed, can inherit or be adjusted */
+    --sidebar-background: 240 10% 97%;
+    --sidebar-foreground: 240 10% 25%;
+    --sidebar-primary: 340 100% 85%;
+    --sidebar-primary-foreground: 340 100% 20%;
+    --sidebar-accent: 170 70% 75%;
+    --sidebar-accent-foreground: 170 70% 15%;
+    --sidebar-border: 240 10% 85%;
+    --sidebar-ring: 340 100% 85%;
+  }
+
+  .dark {
+    --background: 240 10% 10%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 12%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 12%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 340 100% 75%; /* Adjusted for dark mode if needed */
+    --primary-foreground: 340 100% 10%;
+    --secondary: 240 10% 15%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 10% 15%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 170 60% 65%; /* Adjusted for dark mode if needed */
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 10% 20%;
+    --input: 240 10% 20%;
+    --ring: 340 100% 75%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
