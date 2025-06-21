@@ -48,7 +48,7 @@ export const requestNotificationPermission = async (): Promise<string | null> =>
     if (permission === "granted") {
       console.log("Notification permission granted.");
       // Get the token
-      const currentToken = await getToken(messaging, { vapidKey: "YOUR_VAPID_KEY_IF_YOU_HAVE_ONE_FROM_FIREBASE_CONSOLE_SETTINGS" }); // Replace with your VAPID key
+      const currentToken = await getToken(messaging, { vapidKey: "BE6b1HCNN6fX35P0TThG6NpJORLXFPIs3Zrf_ihfqJhK04wsDwYgsNCePzZdRa3M3R5uVodZBHBiC1Sa6VSBH_Y" });
       if (currentToken) {
         console.log("FCM Token:", currentToken);
         // You would typically send this token to your server to send push notifications
