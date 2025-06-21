@@ -10,10 +10,11 @@ firebase.initializeApp({
   apiKey: "AIzaSyAc3Ly9HZzhZzlxZbfVTLybXR2DWJ7ALJ0",
   authDomain: "voicetasker-ba13c.firebaseapp.com",
   projectId: "voicetasker-ba13c",
-  storageBucket: "voicetasker-ba13c.appspot.com", // <-- මෙහෙම වෙනස් කරන්න
+  storageBucket: "voicetasker-ba13c.appspot.com",
   messagingSenderId: "634259729654",
   appId: "1:634259729654:web:1b5b19b4846ed6faec50d7",
-  measurementId: "G-NXNN715DHC"
+  measurementId: "G-NXNN715DHC",
+  vapidKey: "BE6b1HCNN6fX35P0TThG6NpJORLXFPIs3Zrf_ihfqJhK04wsDwYgsNCePzZdRa3M3R5uVodZBHBiC1Sa6VSBH_Y"
 });
 
 // Retrieve an instance of Firebase Messaging so that it can handle background messages.
